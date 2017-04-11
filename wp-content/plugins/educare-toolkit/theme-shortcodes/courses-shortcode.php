@@ -10,10 +10,6 @@ add_action('wp_ajax_nopriv_load_more_courses', 'load_more_courses_callback');
 add_action('wp_ajax_load_more_courses', 'load_more_courses_callback');
 
 function load_more_courses_callback() {
-    
- 
-    
-    
     $permission = check_ajax_referer( 'load_more_courses_nonce', 'nonce', false );
     if( $permission == false ) {
         echo 'error';

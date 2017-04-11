@@ -146,7 +146,7 @@ function educare_toolkit_custom_post() {
             'menu_icon' => 'dashicons-star-half'
         )
     );
-    
+	
     register_taxonomy(
         'course_cat',  
         'course',                  
@@ -161,6 +161,7 @@ function educare_toolkit_custom_post() {
             )
         )
     );
+	
     
     register_taxonomy(
         'event_cat',  
